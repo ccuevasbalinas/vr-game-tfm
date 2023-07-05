@@ -162,6 +162,9 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
         /// </summary>
         public float CloseOnInactivityTime = 15;
 
+        // Event to be raised when press Enter 
+        public ScriptableEvent OnKeyboardEnter;
+
         /// <summary>
         /// Time on which the keyboard should close on inactivity
         /// </summary>
@@ -793,6 +796,8 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
         /// </summary>
         public void Enter()
         {
+            OnKeyboardEnter.Raise();
+            /*
             if (SubmitOnEnter)
             {
                 // Send text entered event and close the keyboard
@@ -811,6 +816,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.UI
 
                 UpdateCaretPosition(m_CaretPosition);
             }
+            */
 
         }
 
