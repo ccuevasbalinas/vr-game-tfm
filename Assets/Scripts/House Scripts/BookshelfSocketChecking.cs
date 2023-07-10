@@ -49,11 +49,15 @@ public class BookshelfSocketChecking : MonoBehaviour
                 IXRSelectInteractable objName = _socket.GetOldestInteractableSelected();
                 if (objName.transform.tag == _tagBook)
                 {
-                    // If so, activate the event for placing the book correcly and desactivate the game object in order not to be 
-                    // grabbed anymore because it has been placed right.
-                    int pieceId = int.Parse(objName.transform.name.Split(' ')[1]);
-                    GameManagerHouse.countBooksPlacedCorrectly++;
+                    // Which of the four books is the one that has been placed? Communicate to the GameManager by the ScriptableObject
+                    int bookId = int.Parse(objName.transform.name.Split(' ')[1]);
+                    GameManagerHouse.idBookPlacedCorrectly = bookId;
                     OnBookPlacedCorrectly.Raise();
+
+                    // Make the mesh renderer of the gap's book visible. The idea is to disable the grabbable book and make visibility the one that is in the gap.
+                    this.GetComponent<MeshRenderer>().enabled = true;
+                    this.GetComponent<XRSocketInteractor>().enabled = false;
+                    
                 }
             }
 
