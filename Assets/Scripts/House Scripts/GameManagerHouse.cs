@@ -21,4 +21,9 @@ public class GameManagerHouse : MonoBehaviour
         // You've receive the ID of the book's placed in the bookshelf. Disable it.
         books[idBookPlacedCorrectly - 1].SetActive(false);
     }
+
+    public void Test()
+    {
+        Debug.Log("Prueba realizada Carlos");
+    }
 }
