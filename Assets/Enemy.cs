@@ -17,6 +17,14 @@ public class Enemy : MonoBehaviour
         _transform = GetComponent<Transform>();
         _animator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
+        if(_followPlayerEnabled)
+        {
+            _animator.Play("Run");
+        }
+        else
+        {
+            _animator.Play("Idle");
+        }
     }
 
     private void Update()
@@ -36,6 +44,7 @@ public class Enemy : MonoBehaviour
     public void ActivateFollow()
     {
         _followPlayerEnabled = true;
+        _animator.Play("Run");
     }
 
     private void DeactivateFollow()
