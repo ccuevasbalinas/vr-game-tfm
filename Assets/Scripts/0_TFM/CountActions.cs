@@ -7,7 +7,7 @@ public class CountActions : MonoBehaviour
     [Header("Event to be raised after complete actions")]
     [SerializeField] private ScriptableEvent _OnActivateEvent;
     [Header("Number of actions to be completed")]
-    [SerializeField] private int _totalActions = 4;
+    [SerializeField] private int _totalActions;
     private int _currentActivatedActions = 0;
 
     public void IncrementActions()
@@ -19,5 +19,10 @@ public class CountActions : MonoBehaviour
             Debug.Log("All events activated");
             _OnActivateEvent.Raise();
         }
+    }
+
+    public void ResetActionsCount()
+    {
+        _currentActivatedActions = 0;
     }
 }
