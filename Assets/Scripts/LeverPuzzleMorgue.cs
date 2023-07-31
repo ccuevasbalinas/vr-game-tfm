@@ -5,7 +5,7 @@ using UnityEngine;
 public class LeverPuzzleMorgue : MonoBehaviour
 {
     [Header("Lever Morgue Puzzle")]
-    [SerializeField] private List<GameObject> _doors;
+    [SerializeField] private List<MorgueDoor> _doors;
     [SerializeField] private ScriptableEvent _OnOpenMorgue;
     private int _morgueDoors;
     private int _morgueClosedDoors;
@@ -13,7 +13,6 @@ public class LeverPuzzleMorgue : MonoBehaviour
     public void Awake()
     {
         _morgueDoors = _doors.Count;
-        //Debug.Log("Numero de puertas cerradas :" + _morgueClosedDoors.ToString() + "/" + _morgueDoors.ToString());
         UpdateClosedDoorsCount();
     }
 
@@ -22,7 +21,7 @@ public class LeverPuzzleMorgue : MonoBehaviour
         _morgueClosedDoors = 0;
         foreach (var door in _doors)
         {
-            if (door.activeSelf == false)
+            if (!door.IsOpen())
             {
                 _morgueClosedDoors = _morgueClosedDoors + 1;
             }
@@ -35,7 +34,9 @@ public class LeverPuzzleMorgue : MonoBehaviour
     {
         if (_morgueClosedDoors == _morgueDoors)
         {
+            Debug.Log("ABRE LA MORGUE");
             _OnOpenMorgue.Raise();
         }
     }
+
 }

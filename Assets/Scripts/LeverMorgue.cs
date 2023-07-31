@@ -6,20 +6,15 @@ public class LeverMorgue : MonoBehaviour
 {
     [Header("Lever Morgue")]
     [SerializeField] private List<GameObject> _doors;
+    [SerializeField] private List<MorgueDoor> _doorsMorgue;
     [SerializeField] private ScriptableEvent _OnActivateLever;
 
     public void ChangeDoorsState()
     {
-        foreach (GameObject door in _doors)
+        //foreach (GameObject door in _doors)
+        foreach (var door in _doorsMorgue)
         {
-            if(door.activeSelf == true)
-            {
-                door.SetActive(false);
-            }
-            else
-            {
-                door.SetActive(true);
-            }
+            door.HandleDoorState();
         }
         _OnActivateLever.Raise();
     }
