@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &99346759244615247
+--- !u!1 &7530445613723597465
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,14 +8,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6719726524574578768}
-  - component: {fileID: 2780000357112459370}
-  - component: {fileID: 5340554593487884791}
-  - component: {fileID: 611606857170236307}
-  - component: {fileID: 3674111696586724821}
-  - component: {fileID: 5884870144076431814}
-  - component: {fileID: 3727155770249035754}
-  - component: {fileID: 7609698118474438147}
+  - component: {fileID: 7633895060279607555}
+  - component: {fileID: 4424274851234736269}
+  - component: {fileID: 779643504831931224}
+  - component: {fileID: 4281198293904080687}
+  - component: {fileID: 8602511115255456120}
+  - component: {fileID: 4157685655813911016}
+  - component: {fileID: 4731546243526772185}
+  - component: {fileID: 3414576339567926454}
   m_Layer: 0
   m_Name: BateriaLinterna
   m_TagString: Untagged
@@ -23,36 +23,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6719726524574578768
+--- !u!4 &7633895060279607555
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
-  m_LocalRotation: {x: -0, y: -0.7177715, z: -0, w: -0.69627875}
-  m_LocalPosition: {x: 6.035109, y: 0.887, z: 7.7064123}
-  m_LocalScale: {x: 0.21121144, y: 0.21121144, z: 0.21121144}
+  m_GameObject: {fileID: 7530445613723597465}
+  m_LocalRotation: {x: -0, y: -0.9998886, z: -0, w: 0.014929237}
+  m_LocalPosition: {x: -5.198991, y: 5.6217, z: -6.9630337}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: -268.258, z: 0}
---- !u!33 &2780000357112459370
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -178.289, z: 0}
+--- !u!33 &4424274851234736269
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
+  m_GameObject: {fileID: 7530445613723597465}
   m_Mesh: {fileID: 4300000, guid: 4bea82c2a612ef249aeea0a7f324dc9d, type: 3}
---- !u!23 &5340554593487884791
+--- !u!23 &779643504831931224
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
+  m_GameObject: {fileID: 7530445613723597465}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -88,14 +88,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!95 &611606857170236307
+--- !u!95 &4281198293904080687
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
+  m_GameObject: {fileID: 7530445613723597465}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4bea82c2a612ef249aeea0a7f324dc9d, type: 3}
   m_Controller: {fileID: 0}
@@ -109,13 +109,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &3674111696586724821
+--- !u!65 &8602511115255456120
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
+  m_GameObject: {fileID: 7530445613723597465}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -130,13 +130,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.15340108, y: 0.280867, z: 0.15107056}
   m_Center: {x: 0, y: 0.005438015, z: 0}
---- !u!54 &5884870144076431814
+--- !u!54 &4157685655813911016
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
+  m_GameObject: {fileID: 7530445613723597465}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -157,13 +157,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3727155770249035754
+--- !u!114 &4731546243526772185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
+  m_GameObject: {fileID: 7530445613723597465}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -212,14 +212,14 @@ MonoBehaviour:
         m_MethodName: ReloadFlashlight
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 7609698118474438147}
+          m_ObjectArgument: {fileID: 3414576339567926454}
           m_ObjectArgumentAssemblyTypeName: FlashlightBattery, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 99346759244615247}
+      - m_Target: {fileID: 7530445613723597465}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -316,13 +316,13 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &7609698118474438147
+--- !u!114 &3414576339567926454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99346759244615247}
+  m_GameObject: {fileID: 7530445613723597465}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 784e55c2b68490043ae7333b3f696f2e, type: 3}
