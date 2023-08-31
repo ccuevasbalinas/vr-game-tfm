@@ -7,6 +7,7 @@ public class FlashlightVR : MonoBehaviour
     [SerializeField] private Light _light;
     [SerializeField] private float lifetime = 100.0f;
     [SerializeField] private bool isOn = false;
+    [SerializeField] private bool isInfinite = false;
 
     public void TurnOnLight()
     {
@@ -22,17 +23,19 @@ public class FlashlightVR : MonoBehaviour
 
     private void Update()
     {
-        if(isOn)
+        if (!isInfinite)
         {
-            lifetime = lifetime - 1 * Time.deltaTime;
-        }
+            if (isOn)
+            {
+                lifetime = lifetime - 1 * Time.deltaTime;
+            }
 
-        if(lifetime <= 0)
-        {
-            lifetime = 0;
-            TurnOffLight();
+            if (lifetime <= 0)
+            {
+                lifetime = 0;
+                TurnOffLight();
+            }
         }
-
     }
 
     public void ReloadFlashlight(FlashlightBattery batt)
