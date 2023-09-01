@@ -7,10 +7,12 @@ public class MorgueDoor : MonoBehaviour
     [SerializeField] private bool isOpen = false;
     
     private Animator animator;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public bool IsOpen()
@@ -23,12 +25,14 @@ public class MorgueDoor : MonoBehaviour
         animator.Play("anim_open_door");
         Debug.Log("abre");
         isOpen = true;
+        audioSource.Play();
     }
 
     public void CloseDoor()
     {
         animator.Play("anim_close_door");
         isOpen = false;
+        audioSource.Play();
     }
 
     public void HandleDoorState()
@@ -41,5 +45,6 @@ public class MorgueDoor : MonoBehaviour
         {
             OpenDoor();
         }
+        
     }
 }
