@@ -6,6 +6,7 @@ public class TriggerListener : MonoBehaviour
 {
     public string objectTag;
     public ScriptableEvent OnTrigger;
+    public bool isOneTimeTrigger = false;
 
     // Upon collision with another GameObject, this GameObject will reverse direction.
     private void OnTriggerEnter(Collider other)
@@ -13,6 +14,9 @@ public class TriggerListener : MonoBehaviour
         if (other.gameObject.tag == objectTag) 
         {
             OnTrigger.Raise();
+
+            if (isOneTimeTrigger)
+                this.gameObject.SetActive(false);
         }
     }
 }

@@ -10,6 +10,13 @@ public class LeverPuzzleMorgue : MonoBehaviour
     private int _morgueDoors;
     private int _morgueClosedDoors;
 
+    /*
+     * Levers Order: 3-10-8-1-2-7-9-2-8-4-1-8-6
+     * 1 2 3 4
+     * 5     6
+     * 7 8 9 10
+    */
+
     public void Awake()
     {
         _morgueDoors = _doors.Count;
