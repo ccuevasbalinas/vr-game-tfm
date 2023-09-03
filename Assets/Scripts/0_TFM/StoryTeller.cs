@@ -10,6 +10,7 @@ public class StoryTeller : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private ActionBasedControllerManager rightHandController;
     [SerializeField] private ActionBasedControllerManager leftHandController;
+    [SerializeField] private SceneTransitionManager sceneTransitionManager;
 
     private int currentAudioIndex = 0;
     private float timeToWait = 0.0f;
@@ -48,13 +49,13 @@ public class StoryTeller : MonoBehaviour
     public void LastStoryMoment()
     {
         if(count == 0)
-            StartCoroutine(EndScene(lastAudioTime + 1.0f));
+            StartCoroutine(EndScene(lastAudioTime + 2.0f));
         count = count + 1;   
     }
 
     private IEnumerator EndScene(float time)
     {
         yield return new WaitForSeconds(time);
-        Debug.Log("FINAL CAMBIAR ESCENA");
+        sceneTransitionManager.GoToScene(0);
     }
 }
