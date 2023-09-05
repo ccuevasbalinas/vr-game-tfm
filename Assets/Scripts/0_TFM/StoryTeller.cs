@@ -56,6 +56,6 @@ public class StoryTeller : MonoBehaviour
     private IEnumerator EndScene(float time)
     {
         yield return new WaitForSeconds(time);
-        sceneTransitionManager.GoToScene(0);
+        sceneTransitionManager.GoToScene(6);
     }
 }

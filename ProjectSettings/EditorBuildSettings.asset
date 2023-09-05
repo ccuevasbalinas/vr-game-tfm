@@ -9,8 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/1 Start Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/2 Game Scene.unity
-    guid: eccb2bc76074b2849b626b75e749890d
+    path: Assets/Scenes/Scene House/House.unity
+    guid: 3721ee92f18c1344fab7ac1675af7c53
+  - enabled: 1
+    path: Assets/Scenes/Scene Garage/Garage.unity
+    guid: 68532f5941ef7e2428ed42a82389e295
+  - enabled: 1
+    path: Assets/Scenes/Scene Tunnels/Tunnels.unity
+    guid: 4609722a111d2ff4580e19e29b370e66
+  - enabled: 1
+    path: Assets/Scenes/Scene Hospital/Hospital.unity
+    guid: bb877af3fe5ab7644aedb2c2a9261d19
+  - enabled: 1
+    path: Assets/Scenes/Scene Morgue/Morgue.unity
+    guid: 4d9dc374db83b164882625697dd6279e
+  - enabled: 1
+    path: Assets/Scenes/Scene Road/Road.unity
+    guid: 19333f7b4eb3259429d8674904f1a3b5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2238d457089b9494896515a25debf01c,
       type: 2}

@@ -11,7 +11,7 @@ public class GameManagerHouse : MonoBehaviour
     public GameObject[] clues;                              // Array that contains all clues for the following password' puzzle.
     public ScriptableEvent scriptableEventGameObject;       // Game objects associated to the puzzle once its has finished.
 
-    private int _countBooksPlacedCorrectly = 0;            // Books placed in the bookshelf.
+    private int _countBooksPlacedCorrectly = 0;             // Books placed in the bookshelf.
 
 
     // Function that put the correct books in the bookshelf.
@@ -19,6 +19,8 @@ public class GameManagerHouse : MonoBehaviour
     {
         // Increment the number of books placed correctly.
         _countBooksPlacedCorrectly++;
+
+        Debug.Log(idBookPlacedCorrectly);
 
         // You've receive the ID of the book's placed in the bookshelf. Disable it and make appear its corresponding clue.
         books[idBookPlacedCorrectly - 1].SetActive(false);
