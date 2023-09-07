@@ -5,37 +5,61 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class BookshelfSocketChecking : MonoBehaviour
 {
-    public ScriptableEvent OnBookPlacedCorrectly;               // Reference to a scriptable event for placing a book correctly.
+    #region Variables
+    /// <summary>
+    /// Reference to a scriptable event for placing a book correctly.
+    /// </summary>
+    public ScriptableEvent OnBookPlacedCorrectly;               
 
-    private string _tagBook;                                     // Tag that 'real' book of the bookshelf has.
-    private XRSocketInteractor _socket;                         // Socket where the book is trying to be placed.
-    private int _socketId;                                      // Identificator of the socket.
-    private bool _checkingBook;                                 // Flag to controll the socket's book checking process.
+    /// <summary>
+    /// Tag that 'real' book of the bookshelf has.
+    /// </summary>
+    private string _tagBook;                                    
 
-    
-    // At the beginning, extract the book' socket and its ID.
+    /// <summary>
+    /// Socket where the book is trying to be placed.
+    /// </summary>
+    private XRSocketInteractor _socket;                         
+
+    /// <summary>
+    /// Identificator of the socket.
+    /// </summary>
+    private int _socketId;                                     
+
+    /// <summary>
+    /// Flag to controll the socket's book checking process.
+    /// </summary>
+    private bool _checkingBook;
+    #endregion
+
+    #region Functions
+    /// <summary>
+    /// At the beginning, extract the book' socket and its ID.
+    /// </summary>
     void Start()
     {
         _socket = GetComponent<XRSocketInteractor>();
         _socketId = int.Parse(transform.name.Split(' ')[2]);
         _checkingBook = false;
         _tagBook = "Book";
-        
     }
 
-    // Update is called socketCheck() function to see if a book wants to be placed or not per frame
-    void Update()
-    {
-        SocketCheck();
-    }
 
-    // Function used for says: "okey, a new book wants to be placed in the bookshelf. Can we put this book on it?"
-    public void BookPlaced()
-    {
-        _checkingBook = true;
-    }
+    /// <summary>
+    /// Every frame checks if in the socket has been placed a game object.
+    /// </summary>
+    void Update() => SocketCheck();
 
-    // Function that checks if a book has been placed correctly.
+
+    /// <summary>
+    /// Function used for says: "okey, a new book wants to be placed in the bookshelf. Can we put this book on it?"
+    /// </summary>
+    public void BookPlaced() => _checkingBook = true;
+
+
+    /// <summary>
+    /// Function that checks if a book has been placed correctly.
+    /// </summary>
     public void SocketCheck()
     {
         // A new book is trying to be placed in the bookshelf. Let's check if it can or not..
@@ -51,13 +75,13 @@ public class BookshelfSocketChecking : MonoBehaviour
                 {
                     // Which of the four books is the one that has been placed? Communicate to the GameManager by the ScriptableObject
                     int bookId = int.Parse(objName.transform.name.Split(' ')[1]);
+                    Debug.Log("book ID: " + bookId);
                     GameManagerHouse.idBookPlacedCorrectly = bookId;
                     OnBookPlacedCorrectly.Raise();
 
                     // Make the mesh renderer of the gap's book visible. The idea is to disable the grabbable book and make visibility the one that is in the gap.
                     this.GetComponent<MeshRenderer>().enabled = true;
                     this.GetComponent<XRSocketInteractor>().enabled = false;
-                    
                 }
             }
 
@@ -65,4 +89,5 @@ public class BookshelfSocketChecking : MonoBehaviour
             _checkingBook = false;
         }
     }
+    #endregion
 }

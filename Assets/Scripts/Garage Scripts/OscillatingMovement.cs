@@ -5,17 +5,31 @@ using UnityEngine;
 
 public class OscillatingMovement : MonoBehaviour
 {
+    #region Variables
+    /// <summary>
+    /// Duration of the earthquake.
+    /// </summary>
     [SerializeField] private float duration = 5.15f;
-    [SerializeField] private float magnitude = .4f;
 
-    // Function made by scriptable event that listen if the camera must be shaked, simulating the quake effect.
+    /// <summary>
+    /// Magnitude of the earthqueake.
+    /// </summary>
+    [SerializeField] private float magnitude = .4f;
+    #endregion
+
+    #region Functions
+    /// <summary>
+    /// Function made by scriptable event that listen if the camera must be shaked, simulating the quake effect.
+    /// </summary>
     public void Quake()
     {
         StartCoroutine(OscilatingMovementFunction(duration, magnitude));
     }
 
 
-    // Coroutine that handles the quake effect that is applied to the camera.
+    /// <summary>
+    /// Coroutine that handles the quake effect that is applied to the camera.
+    /// </summary>
     IEnumerator OscilatingMovementFunction(float duration, float magnitude)
     {
         Vector3 originalPos = transform.localPosition;
@@ -31,7 +45,6 @@ public class OscillatingMovement : MonoBehaviour
 
         // By the end of the shake, return to the original position.
         transform.localPosition = originalPos;
-
     }
-
+    #endregion
 }

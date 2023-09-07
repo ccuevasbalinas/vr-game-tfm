@@ -4,33 +4,45 @@ using UnityEngine;
 
 public class SoundActivation : MonoBehaviour
 {
+    #region Variables
+    /// <summary>
+    /// Audio source to be sound after a specific period of time.
+    /// </summary>
     public AudioSource audioSource;
-    public AudioClip soundClip; 
+
+    /// <summary>
+    /// Audio clib to be played after a specific period of time.
+    /// </summary>
+    public AudioClip soundClip;
+
+    /// <summary>
+    /// Specific period of time to be used for playing a sound.
+    /// </summary>
     public float activationTime = 2.0f;
-    
+    #endregion
 
+    #region Functions
+    /// <summary>
+    /// Function that activated a coroutine that is going to handle the aplication of a sound after a specific period of time.
+    /// </summary>
+    void Start() => StartCoroutine(ActivateSoundAfterDelay());
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        StartCoroutine(ActivateSoundAfterDelay());
-    }
-
+    /// <summary>
+    /// Coroutine that after a specific period of time, plays a sound.
+    /// </summary>
     private IEnumerator ActivateSoundAfterDelay()
     {
-        // Espera durante el tiempo especificado
         yield return new WaitForSeconds(activationTime);
-
-        // Activa el sonido
         PlaySound();
     }
 
+    /// <summary>
+    /// Function that assign the sound to the audio source and plays it.
+    /// </summary>
     private void PlaySound()
     {
-        // Asigna el AudioClip y reproduce el sonido
         audioSource.clip = soundClip;
         audioSource.Play();
     }
+    #endregion
 }

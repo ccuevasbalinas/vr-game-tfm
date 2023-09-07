@@ -4,22 +4,42 @@ using UnityEngine;
 
 public class GameManagerHouse : MonoBehaviour
 {
-    public static int idBookPlacedCorrectly = 0;            // Id of the latest book placed in the bookshelf correctly.
-
+    #region Variables
     [Header("Puzzle no.1 Books in the bookshelf")]
-    public GameObject[] books;                              // Array that contains all books of the puzzle.
-    public GameObject[] clues;                              // Array that contains all clues for the following password' puzzle.
-    public ScriptableEvent scriptableEventGameObject;       // Game objects associated to the puzzle once its has finished.
+    /// <summary>
+    /// Id of the latest book placed in the bookshelf correctly.
+    /// </summary>
+    public static int idBookPlacedCorrectly = 0;            
 
-    private int _countBooksPlacedCorrectly = 0;             // Books placed in the bookshelf.
+    /// <summary>
+    /// Array that contains all books of the puzzle.
+    /// </summary>
+    public GameObject[] books;                              
 
+    /// <summary>
+    /// Array that contains all clues for the following password' puzzle.
+    /// </summary>
+    public GameObject[] clues;                              
 
-    // Function that put the correct books in the bookshelf.
+    /// <summary>
+    /// Game objects associated to the puzzle once its has finished.
+    /// </summary>
+    public ScriptableEvent scriptableEventGameObject;       
+
+    /// <summary>
+    /// Books placed in the bookshelf.
+    /// </summary>
+    private int _countBooksPlacedCorrectly = 0;
+    #endregion
+
+    #region Functions
+    /// <summary>
+    /// Function that put the correct books in the bookshelf.
+    /// </summary>
     public void UpdateBookshelf()
     {
         // Increment the number of books placed correctly.
         _countBooksPlacedCorrectly++;
-
         Debug.Log(idBookPlacedCorrectly);
 
         // You've receive the ID of the book's placed in the bookshelf. Disable it and make appear its corresponding clue.
@@ -29,4 +49,5 @@ public class GameManagerHouse : MonoBehaviour
         // If the number of books that has been placed in the bookshelf are four, i.e. all the books, it means the puzzle has been solved.
         if (_countBooksPlacedCorrectly == books.Length) scriptableEventGameObject.Raise();
     }
+    #endregion
 }

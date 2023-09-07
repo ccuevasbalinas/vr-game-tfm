@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ChangeToSceneByEvent : MonoBehaviour
 {
-    public void ChangeToOtherScene()
-    {
-        SceneTransitionManager.singleton.GoToSceneAsync(2);
-    }
+    public void ChangeToOtherScene() => SceneTransitionManager.singleton.GoToSceneAsync(2);
+    
 }
