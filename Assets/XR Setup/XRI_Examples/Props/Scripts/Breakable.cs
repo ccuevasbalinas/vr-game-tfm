@@ -30,7 +30,6 @@ namespace UnityEngine.XR.Content.Interaction
         /// The first parameter is the colliding object, the second parameter is the 'broken' version.
         /// </summary>
         public BreakEvent onBreak => m_OnBreak;
-    
 
         void OnCollisionEnter(Collision collision)
         {
