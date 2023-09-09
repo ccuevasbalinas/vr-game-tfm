@@ -5,10 +5,13 @@ using UnityEngine.EventSystems;
 
 public class UIAudio : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    #region Variables
     public string clickAudioName;
     public string hoverEnterAudioName;
     public string hoverExitAudioName;
+    #endregion
 
+    #region Functions
     public void OnPointerClick(PointerEventData eventData)
     {
         if(clickAudioName != "")
@@ -32,4 +35,5 @@ public class UIAudio : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
             AudioManager.instance.Play(hoverExitAudioName);
         }
     }
+    #endregion
 }
