@@ -39848,11 +39848,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyAudios:
-  - {fileID: 8300000, guid: a347474ae2ed7e446a2ecea9975668b6, type: 3}
-  - {fileID: 8300000, guid: 2ca8031940eade0449f06e7c263b42a6, type: 3}
+  - {fileID: 8300000, guid: 66e628d02405a0648af642e67fd2c286, type: 3}
+  - {fileID: 8300000, guid: 4804ea8595ab1ae4d91e9e8675fc7df7, type: 3}
+  - {fileID: 8300000, guid: 9ed6cc35434dd4544b2ea9c3f8d2e148, type: 3}
   - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
+  - {fileID: 8300000, guid: 6c8d955a19ec96a48b02d91564f5b4ad, type: 3}
   - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
   - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
   audioSource: {fileID: 4655776789675625731}

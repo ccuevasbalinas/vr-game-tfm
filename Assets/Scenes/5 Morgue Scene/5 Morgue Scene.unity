@@ -21110,9 +21110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyAudios:
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
+  - {fileID: 8300000, guid: ce8460ac810f40049bf958cfe43573f3, type: 3}
+  - {fileID: 8300000, guid: 4eec1a9da6171d7438e85d71c07ea509, type: 3}
+  - {fileID: 8300000, guid: 61624d260db4eac43b0f442795e0f045, type: 3}
   audioSource: {fileID: 5089462139298704969}
   rightHandController: {fileID: 5769882312984809744}
   leftHandController: {fileID: 1727709613491691691}

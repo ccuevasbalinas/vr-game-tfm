@@ -52901,9 +52901,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyAudios:
-  - {fileID: 8300000, guid: a347474ae2ed7e446a2ecea9975668b6, type: 3}
-  - {fileID: 8300000, guid: 2ca8031940eade0449f06e7c263b42a6, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
+  - {fileID: 8300000, guid: 5c1ef7f6892ce12488c631f9a8b2391a, type: 3}
+  - {fileID: 8300000, guid: 9e2aebab723170b46b55c1bdd77ab0a9, type: 3}
+  - {fileID: 8300000, guid: 8db1b04918df89a4385bf38f2ed28de3, type: 3}
   audioSource: {fileID: 732577068085907954}
   rightHandController: {fileID: 7788244716656737719}
   leftHandController: {fileID: 6808284345166503026}
