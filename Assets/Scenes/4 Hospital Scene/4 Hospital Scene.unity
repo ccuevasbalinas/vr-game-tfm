@@ -23718,6 +23718,7 @@ GameObject:
   - component: {fileID: 1297983490}
   - component: {fileID: 1297983492}
   - component: {fileID: 1297983491}
+  - component: {fileID: 1297983493}
   m_Layer: 0
   m_Name: KillPlayer
   m_TagString: Untagged
@@ -23763,7 +23764,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1297983493}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23780,6 +23793,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69315691ff93a3948909787c730579a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1297983493
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297983489}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0d3e58bb90924afba39e665277b5f80a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.05
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1298026564
 GameObject:
   m_ObjectHideFlags: 0
@@ -39849,12 +39958,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyAudios:
   - {fileID: 8300000, guid: 66e628d02405a0648af642e67fd2c286, type: 3}
+  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
+  - {fileID: 8300000, guid: 292e9f56c1f99aa4fa8a04cdf5f48736, type: 3}
   - {fileID: 8300000, guid: 4804ea8595ab1ae4d91e9e8675fc7df7, type: 3}
   - {fileID: 8300000, guid: 9ed6cc35434dd4544b2ea9c3f8d2e148, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
+  - {fileID: 8300000, guid: 1a26f387236b297458143f1b51beef7a, type: 3}
   - {fileID: 8300000, guid: 6c8d955a19ec96a48b02d91564f5b4ad, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
-  - {fileID: 8300000, guid: e00f17d38c376ba4cb8a2d1d10c739ba, type: 3}
   audioSource: {fileID: 4655776789675625731}
   rightHandController: {fileID: 1218876423143049417}
   leftHandController: {fileID: 6269822669646838130}
