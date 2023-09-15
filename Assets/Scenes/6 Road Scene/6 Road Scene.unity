@@ -4659,7 +4659,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e5ab24dba1cf54a498d3c14d00bd0da1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.303
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -17218,7 +17218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302684953}
   m_LocalRotation: {x: -0, y: 0.8952894, z: -0, w: -0.445485}
-  m_LocalPosition: {x: -78.64, y: -4.35, z: -79.75}
+  m_LocalPosition: {x: -93.97, y: -4.35, z: -59.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26349,7 +26349,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3eb1bad9118d6834eb5917f1cd7198cf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.373
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -52238,7 +52238,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ffe7f0a9f5739dd4e9826c631a402807, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.561
+  m_Volume: 0.352
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -73427,7 +73427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024853288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.94, y: -1.7, z: -120.48}
+  m_LocalPosition: {x: 19.94, y: -1.7, z: -114.78}
   m_LocalScale: {x: 14.346477, y: 4.8446, z: 9.372159}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73446,7 +73446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd492f5d8965e0446838a3389d7c0acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 2109392831}
+  teleportTarget: {fileID: 302684954}
   OnTrigger: {fileID: 11400000, guid: 1bff7d4702d09204fa024c4957322d7f, type: 2}
   player: {fileID: 6620499360140152613}
 --- !u!65 &2024853291
@@ -75219,7 +75219,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b307a096b6e964a47a41bb423318f752, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.745
+  m_Volume: 0.462
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -83553,6 +83553,7 @@ GameObject:
   - component: {fileID: 4447409358205456305}
   - component: {fileID: 727195731338362900}
   - component: {fileID: 3311117573508723934}
+  - component: {fileID: 4447409358205456306}
   m_Layer: 0
   m_Name: SM_Car09
   m_TagString: Untagged
@@ -84228,6 +84229,7 @@ GameObject:
   - component: {fileID: 3477415491929543882}
   - component: {fileID: 571281375993895791}
   - component: {fileID: 2308497417399005093}
+  - component: {fileID: 4254092245358530161}
   m_Layer: 0
   m_Name: SM_Car02
   m_TagString: Untagged
@@ -84235,6 +84237,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &4254092245358530161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254092245358530160}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.501978, y: 1.6017921, z: 5.732695}
+  m_Center: {x: -0.01589793, y: 0.07171747, z: 0.0006737709}
 --- !u!4 &4260552637670643907
 Transform:
   m_ObjectHideFlags: 0
@@ -84786,6 +84809,27 @@ Transform:
   m_Father: {fileID: 1628624562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -14.474, y: -75.028, z: 176.329}
+--- !u!65 &4447409358205456306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959666362873664779}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5330558, y: 1.497851, z: 5.559973}
+  m_Center: {x: -0.012012323, y: 0.05998201, z: -0.13541938}
 --- !u!4 &4448477966287164254
 Transform:
   m_ObjectHideFlags: 0
@@ -89124,6 +89168,7 @@ GameObject:
   - component: {fileID: 6087575615701498357}
   - component: {fileID: 7193570568518022736}
   - component: {fileID: 4913503164070118042}
+  - component: {fileID: 7193570568518022737}
   m_Layer: 0
   m_Name: Police Car
   m_TagString: Untagged
@@ -89701,6 +89746,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6859186090952614735}
   m_Mesh: {fileID: 7131366154510310901, guid: 767c166bd74e9cf41b19447b4b68c893, type: 3}
+--- !u!65 &7193570568518022737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859186090952614735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1710038, y: 1.6521773, z: 5.4582224}
+  m_Center: {x: -0.005669892, y: 0.0990707, z: 0.52671456}
 --- !u!4 &7204967385904905104
 Transform:
   m_ObjectHideFlags: 0

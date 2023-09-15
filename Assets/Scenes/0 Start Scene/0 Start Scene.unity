@@ -5945,8 +5945,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Este proyecto ha sido realizado por Carlos Cuevas & Pablo Ruiz para su
-    Trabajo Fin de M\xE1ster.\n\nSpecial shoutout to my mom for always believing
-    in me and to my pet penguin alfred. "
+    Trabajo Fin de M\xE1ster.\n\nM\xE1ster de Computaci\xF3n Gr\xE1fica, Realidad
+    Virtual y Simulation. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b036e831c0c90547b32a8a896d80f79, type: 2}
   m_sharedMaterial: {fileID: 2427308795250815149, guid: 5b036e831c0c90547b32a8a896d80f79,
