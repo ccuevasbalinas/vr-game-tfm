@@ -6,6 +6,6 @@ public class Test_Script : MonoBehaviour
 {
     public void Test()
     {
-        Debug.Log("Carlos, me tienes hasta el coño.");
+        Debug.Log("hola buenas");
     }
 }
