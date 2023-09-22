@@ -1,18 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 
 public class PauseManager : MonoBehaviour
 {
-    [SerializeField] GameObject pauseMenuCanvas;
+    [SerializeField] private InputActionReference _actionReference;
+    [SerializeField] private GameObject pauseMenu;
 
-    public void ActivatePauseCanvas()
+    public UnityEvent _onActionPerformed;
+
+    private void OnEnable()
     {
-        pauseMenuCanvas.SetActive(true);
+        _actionReference.action.performed += HandleOnActionPerformed;
     }
 
-    public void DeactivatePauseCanvas() 
+    private void OnDisable()
     {
-        pauseMenuCanvas.SetActive(false);
+        _actionReference.action.performed -= HandleOnActionPerformed;
+    }
+
+    private void HandleOnActionPerformed(InputAction.CallbackContext obj)
+    {
+        _onActionPerformed.Invoke();
+    }
+
+    public void CheckPauseMenuState()
+    {
+        if(pauseMenu.activeSelf)
+            pauseMenu.SetActive(false);
+        else 
+            pauseMenu.SetActive(true);
     }
 }

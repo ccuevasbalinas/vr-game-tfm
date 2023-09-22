@@ -9,6 +9,9 @@ TagManager:
   - Water
   - Destroyer
   - Book
+  - OUT_OF_MAP
+  - InteractibleObject
+  - Battery
   layers:
   - Default
   - TransparentFX
